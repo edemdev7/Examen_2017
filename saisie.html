@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Enregistrement des candidats</title>
+</head>
+<body>
+    <h1>Saisissez vos coordonnées</h1>
+    <form action="enregistrer.php" method="POST">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        
+        <label for="datenais">Date de naissance:</label>
+        <input type="date" id="datenais" name="datenais" required><br><br>
+        
+        <label for="ville">Ville:</label>
+        <input type="text" id="ville" name="ville" required><br><br>
+        
+        <label for="sexe">Sexe:</label>
+        <select id="sexe" name="sexe">
+            <option value="M">Masculin</option>
+            <option value="F">Féminin</option>
+        </select><br><br>
+        
+        <label for="filiere">Filière:</label>
+        <select id="filiere" name="filiere">
+            <option value="1">Administration et gestion des entreprises</option>
+            <option value="2">Agronomie</option>
+            <option value="3">Réseaux Informatiques et Télécommunications</option>
+            <option value="4">Systèmes Informatiques et Logiciels</option>
+        </select><br><br>
+        
+        <input type="submit" value="Enregistrer">
+        <input type="reset" value="Effacer">
+    </form>
+</body>
+</html>
